@@ -1,5 +1,18 @@
-import profilePicture from '../assets/profilePicture.png';
+import html from '../assets/html.png';
 import nodeJs from '../assets/nodeJs.jpg';
+import flutter from '../assets/flutter.png';
+import angular from '../assets/angular.png';
+import cSharp from '../assets/cSharp.png';
+import cPlusPlus from '../assets/cPlusPlus.png';
+import css from '../assets/css.png';
+import dotnet from '../assets/dotnet.png';
+import javascript from '../assets/javascript.webp';
+import noSql from '../assets/nosql.png';
+import php from '../assets/php.png';
+import python from '../assets/python.png';
+import react from '../assets/react.png';
+import sql from '../assets/sql.png';
+import unity from '../assets/unity.png';
 import ExperienceCard from './ExperienceCard';
 
 interface ExperienceCardType {
@@ -14,93 +27,93 @@ const Experience = () => {
     const experiences: ExperienceCardType[] = [
         {
             id: 1,
-            title: 'NodeJs',
-            imageSrc: profilePicture,
+            title: 'HTML',
+            imageSrc: html,
             style: 'shadow-orange-500',
         },
         {
             id: 2,
             title: 'NodeJs',
             imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            style: 'shadow-green-900',
         },
         {
             id: 3,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            title: 'Angular',
+            imageSrc: angular,
+            style: 'shadow-red-800',
         },
         {
-            id: 1,
-            title: 'NodeJs',
-            imageSrc: profilePicture,
-            style: 'shadow-orange-500',
+            id: 4,
+            title: 'C#',
+            imageSrc: cSharp,
+            style: 'shadow-violet-600',
         },
         {
-            id: 2,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 5,
+            title: 'C++',
+            imageSrc: cPlusPlus,
+            style: 'shadow-gray-700',
         },
         {
-            id: 3,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 6,
+            title: 'Flutter',
+            imageSrc: flutter,
+            style: 'shadow-sky-600',
         },
         {
-            id: 1,
-            title: 'NodeJs',
-            imageSrc: profilePicture,
-            style: 'shadow-orange-500',
+            id: 7,
+            title: 'Dotnet',
+            imageSrc: dotnet,
+            style: 'shadow-violet-800',
         },
         {
-            id: 2,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 8,
+            title: 'Javascript',
+            imageSrc: javascript,
+            style: 'shadow-yellow-300',
         },
         {
-            id: 3,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 9,
+            title: 'No SQL',
+            imageSrc: noSql,
+            style: 'shadow-sky-900',
         },
         {
-            id: 1,
-            title: 'NodeJs',
-            imageSrc: profilePicture,
-            style: 'shadow-orange-500',
+            id: 10,
+            title: 'PHP',
+            imageSrc: php,
+            style: 'shadow-slate-600',
         },
         {
-            id: 2,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 11,
+            title: 'Python',
+            imageSrc: python,
+            style: 'shadow-sky-400',
         },
         {
-            id: 3,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 12,
+            title: 'React',
+            imageSrc: react,
+            style: 'shadow-cyan-300',
         },
         {
-            id: 1,
-            title: 'NodeJs',
-            imageSrc: profilePicture,
-            style: 'shadow-orange-500',
+            id: 13,
+            title: 'SQL',
+            imageSrc: sql,
+            style: 'shadow-cyan-400',
         },
         {
-            id: 2,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 14,
+            title: 'Unity',
+            imageSrc: unity,
+            style: 'shadow-slate-700',
         },
         {
-            id: 3,
-            title: 'NodeJs',
-            imageSrc: nodeJs,
-            style: 'shadow-orange-500',
+            id: 15,
+            title: 'CSS',
+            imageSrc: css,
+            style: 'shadow-blue-400',
         },
     ]
 
