@@ -1,0 +1,1 @@
+export const aboutMeParagraph = 'Motivated and skillful software developer seeking opportunities for developments and growth. Skilled in Frontend, Backend, Game, Virtual Reality and Mobile development. Worked in multiple teams providing valuable insights and problem solving ideas.'

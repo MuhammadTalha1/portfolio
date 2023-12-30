@@ -1,8 +1,8 @@
-interface PortFolioCardPorp {
+interface ProjectCardPorp {
     imageSrc: string;
 }
 
-const PortfolioCard = ({ imageSrc }: PortFolioCardPorp) => {
+const ProjectCard = ({ imageSrc }: ProjectCardPorp) => {
     return (
         <div className='shadow-md shadow-gray-600 rounded-lg'>
             <img className='rounded-md hover:scale-105 duration-300' src={imageSrc} alt='Work Picture'></img>
@@ -14,4 +14,4 @@ const PortfolioCard = ({ imageSrc }: PortFolioCardPorp) => {
     )
 }
 
-export default PortfolioCard
+export default ProjectCard

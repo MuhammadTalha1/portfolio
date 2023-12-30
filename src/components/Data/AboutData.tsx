@@ -1,0 +1,3 @@
+export const heading = 'About';
+export const firstParagraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti eius, aliquid atque asperiores ducimus inventore perferendis placeat, voluptatem temporibus quod ex officiis aut in minus architecto! Ipsum, est dolor?'
+export const secondParagraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti eius, aliquid atque asperiores ducimus inventore perferendis placeat, voluptatem temporibus quod ex officiis aut in minus architecto! Ipsum, est dolor?'

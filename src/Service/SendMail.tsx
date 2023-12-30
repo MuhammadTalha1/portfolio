@@ -1,8 +1,8 @@
 import axios, { AxiosError } from "axios";
 const URL = import.meta.env.VITE_BACKEND_BASE_URL;
-import { contactMessageType } from '../components/ContactMessageInterface';
+import { ContactMessageType } from '../components/Interfaces';
 
-export const sendMessage = async (data: contactMessageType) => {
+export const sendMessage = async (data: ContactMessageType) => {
     console.log(URL)
     try {
         return await axios.post(URL + 'sendMail', data);

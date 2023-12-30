@@ -1,4 +1,5 @@
 import profilePicture from '../assets/profilePicture.png';
+import { aboutMeParagraph } from './Data/HomeData';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
                         I'm a Full Stack Developer
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
-                        Motivated and skillful software developer seeking opportunities for developments and growth. Skilled in Frontend, Backend, Game, Virtual Reality and Mobile development. Worked in multiple teams providing valuable insights and problem solving ideas.
+                        {aboutMeParagraph}
                     </p>
                 </div>
                 <div>

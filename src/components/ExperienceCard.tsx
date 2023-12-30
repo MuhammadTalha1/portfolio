@@ -1,11 +1,6 @@
+import { ExperienceCardType } from "./Interfaces"
 
-interface ExperienceCardPorp {
-    title: string;
-    imageSrc: string;
-    style: string
-}
-
-const ExperienceCard = ({ title, imageSrc, style }: ExperienceCardPorp) => {
+const ExperienceCard = ({ title, imageSrc, style }: ExperienceCardType) => {
     return (
         <div className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
             <img className='w-20 mx-auto' src={imageSrc} alt='Experiene logo'></img>

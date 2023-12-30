@@ -1,19 +1,10 @@
 import { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
-import { Link } from 'react-router-dom';
+import { myName, navbarLinks } from "./Data/NavbarData";
+import NavbarLinks from "./NavbarLinks";
 
-
-interface LinkType {
-    id: number,
-    path: string;
-    label: string;
-}
-interface NavBarProps {
-    links: LinkType[];
-}
-
-const Navbar = ({ links }: NavBarProps) => {
+const Navbar = () => {
 
     const [mobileNav, setMobileNav] = useState(false);
 
@@ -22,7 +13,7 @@ const Navbar = ({ links }: NavBarProps) => {
             <div className="md:flex block justify-between text-center mx-auto text-white overflow-hidden">
                 <div className="flex items-center px-4 py-2">
                     <div className="text-5xl ml-2 font-extrabold">
-                        Talha
+                        {myName}
                     </div>
                     <button
                         className="md:hidden ml-auto"
@@ -39,10 +30,8 @@ const Navbar = ({ links }: NavBarProps) => {
                         } list-none items-center`}
                     onClick={() => setMobileNav(false)}
                 >
-                    {links.map((link) => (
-                        <li key={link.id} className="px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-300" >
-                            <Link to={link.path}>{link.label}</Link>
-                        </li>
+                    {navbarLinks.map((link, index) => (
+                        <NavbarLinks key={index} path={link.path} label={link.label} />
                     ))}
                 </ul>
             </div>
