@@ -1,11 +1,16 @@
 export interface ComponentRouteType {
-    path: string;
+    link: string;
     component: JSX.Element;
 }
 
 export interface NavbarLinkType {
-    path: string;
+    link: string;
     label: string;
+}
+
+export interface NavbarPropType {
+    navbarLink: NavbarLinkType;
+    linkClick: () => void;
 }
 
 

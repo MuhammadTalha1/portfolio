@@ -2,8 +2,6 @@ import { useState } from "react";
 import { ContactMessageType } from "./Interfaces";
 import Message from "./Message";
 import { sendMessage } from "../Service/SendMail";
-import { useNavigate } from 'react-router-dom';
-import { RouteEnum } from "../Constants";
 import LoadingSpinner from "./LoadingSpinner";
 import { heading } from "./Data/ContactData";
 
@@ -11,7 +9,6 @@ const Contact = () => {
 
     const [contactMessage, setContactMessageType] = useState<ContactMessageType>();
     const [message, setMessage] = useState('');
-    const navigate = useNavigate();
     const [sending, setSending] = useState(false);
 
     const onValueChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -35,7 +32,8 @@ const Contact = () => {
             try {
                 const res = await sendMessage(contactMessage);
                 if (res?.status === 200) {
-                    navigate(RouteEnum.HOME_ROUTE);
+                    // navigate(RouteEnum.HOME_ROUTE);
+                    console.log("hello")
                 }
                 else {
                     setMessage('Fail to send Message. Try again!');
@@ -51,9 +49,9 @@ const Contact = () => {
     }
 
     return (
-        <div className='w-full bg-gradient-to-b from-gray-800 to-black text-white p-4 h-screen'>
+        <div className='min-h-screen w-full bg-gradient-to-b from-gray-800 to-black text-white p-4'>
             <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
-                <div className='pb-8'>
+                <div className='pb-8 pt-20'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
                         {heading}
                     </p>

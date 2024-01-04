@@ -7,9 +7,9 @@ import Home from "../Home"
 import Projects from "../Projects"
 
 export const componentRoutes: ComponentRouteType[] = [
-    { path: RouteEnum.HOME_ROUTE, component: <Home /> },
-    { path: RouteEnum.ABOUT_ROUTE, component: <About /> },
-    { path: RouteEnum.PROJECT_ROUTE, component: <Projects /> },
-    { path: RouteEnum.EXPERIENCE_ROUTE, component: <Experience /> },
-    { path: RouteEnum.CONTACT_ROUTE, component: <Contact /> },
+    { link: RouteEnum.HOME_ROUTE, component: <Home /> },
+    { link: RouteEnum.ABOUT_ROUTE, component: <About /> },
+    { link: RouteEnum.PROJECT_ROUTE, component: <Projects /> },
+    { link: RouteEnum.EXPERIENCE_ROUTE, component: <Experience /> },
+    { link: RouteEnum.CONTACT_ROUTE, component: <Contact /> },
 ]

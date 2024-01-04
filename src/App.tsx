@@ -1,25 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SocialLinks from './components/SocialLinks';
-import { componentRoutes } from './components/Data/ComponentRoutesData'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Element } from 'react-scroll';
 import Navbar from './components/Navbar';
+import { componentRoutes } from './components/Data/ComponentRoutesData';
+import SocialLinks from './components/SocialLinks';
+
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <>
-        </>
-        {componentRoutes.map((componentRoute, index) => (
-          <Route key={index} path={componentRoute.path} element={
-            <>
-              <Navbar />
-              {componentRoute.component}
-              <SocialLinks />
-            </>
-          } />
-        ))}
-      </Routes>
-    </Router>
+    <>
+      <Navbar />
+      {componentRoutes.map((componentRoute, index) => (
+        <Element key={index} name={componentRoute.link}>
+          {componentRoute.component}
+        </Element>
+      ))
+      }
+      <SocialLinks />
+    </>
   )
 }
 

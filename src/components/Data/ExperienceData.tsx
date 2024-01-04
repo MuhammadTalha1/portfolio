@@ -13,6 +13,8 @@ import python from '../../assets/python.png';
 import react from '../../assets/react.png';
 import sql from '../../assets/sql.png';
 import unity from '../../assets/unity.png';
+import github from '../../assets/github.png';
+import tailwind from '../../assets/tailwind.png';
 import { ExperienceCardType } from '../Interfaces';
 
 export const heading = 'Experience';
@@ -92,4 +94,15 @@ export const experiences: ExperienceCardType[] = [
         imageSrc: css,
         style: 'shadow-blue-400',
     },
+    {
+        title: 'Tailwind CSS',
+        imageSrc: tailwind,
+        style: 'shadow-blue-400',
+    },
+    {
+        title: 'GitHub',
+        imageSrc: github,
+        style: 'shadow-blue-400',
+    },
+
 ]
