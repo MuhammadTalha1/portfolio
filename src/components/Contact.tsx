@@ -4,6 +4,7 @@ import Message from "./Message";
 import { sendMessage } from "../Service/SendMail";
 import LoadingSpinner from "./LoadingSpinner";
 import { heading } from "./Data/ContactData";
+import { animateScroll } from 'react-scroll';
 
 const Contact = () => {
 
@@ -32,8 +33,7 @@ const Contact = () => {
             try {
                 const res = await sendMessage(contactMessage);
                 if (res?.status === 200) {
-                    // navigate(RouteEnum.HOME_ROUTE);
-                    console.log("hello")
+                    animateScroll.scrollToTop();
                 }
                 else {
                     setMessage('Fail to send Message. Try again!');

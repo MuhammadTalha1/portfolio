@@ -1,21 +1,22 @@
-import html from '../../assets/html.png';
-import nodeJs from '../../assets/nodeJs.jpg';
-import flutter from '../../assets/flutter.png';
-import angular from '../../assets/angular.png';
-import cSharp from '../../assets/cSharp.png';
-import cPlusPlus from '../../assets/cPlusPlus.png';
-import css from '../../assets/css.png';
-import dotnet from '../../assets/dotnet.png';
-import javascript from '../../assets/javascript.webp';
-import noSql from '../../assets/nosql.png';
-import php from '../../assets/php.png';
-import python from '../../assets/python.png';
-import react from '../../assets/react.png';
-import sql from '../../assets/sql.png';
-import unity from '../../assets/unity.png';
-import github from '../../assets/github.png';
-import tailwind from '../../assets/tailwind.png';
 import { ExperienceCardType } from '../Interfaces';
+
+const react = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367687/portfolio/react_fq3k46.png';
+const angular = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704357980/portfolio/angular_yaz61a.png';
+const nodeJs = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367596/portfolio/nodeJs_q9xon3.png';
+const flutter = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367413/portfolio/flutter_wllohz.png';
+const javascript = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367600/portfolio/javascript_yfu0wm.webp';
+const python = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367683/portfolio/python_ibjarh.png';
+const html = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367597/portfolio/html_qflxkg.png';
+const cSharp = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704358158/portfolio/cSharp_zhwaok.png';
+const cPlusPlus = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704358125/portfolio/cPlusPlus_nm2qjr.png';
+const dotnet = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367412/portfolio/dotnet_y80kjc.png';
+const noSql = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367681/portfolio/nosql_ggpiwu.png';
+const php = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367682/portfolio/php_jin3mb.png';
+const sql = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704368168/portfolio/sql_yr3a2f.png';
+const unity = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367727/portfolio/unity_shzaca.png';
+const css = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367330/portfolio/css_d3uabn.png';
+const tailWindCss = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367726/portfolio/tailwind_obvzmh.png';
+const github = 'https://res.cloudinary.com/dy3ksskhb/image/upload/v1704367600/portfolio/github_bbvhf4.png';
 
 export const heading = 'Experience';
 export const experiences: ExperienceCardType[] = [
@@ -96,13 +97,13 @@ export const experiences: ExperienceCardType[] = [
     },
     {
         title: 'Tailwind CSS',
-        imageSrc: tailwind,
-        style: 'shadow-blue-400',
+        imageSrc: tailWindCss,
+        style: 'shadow-cyan-400',
     },
     {
         title: 'GitHub',
         imageSrc: github,
-        style: 'shadow-blue-400',
+        style: 'shadow-fuchsia-400',
     },
 
 ]
