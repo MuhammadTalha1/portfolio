@@ -1,6 +1,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { GrResume } from "react-icons/gr";
 import { SocialLinkType } from "../Interfaces";
+import resume from '../../../public/resume.pdf';
 
 export const socialLinks: SocialLinkType[] = [
     {
@@ -20,7 +21,7 @@ export const socialLinks: SocialLinkType[] = [
     {
         iconName: 'Resume',
         icon: <GrResume size={30} />,
-        href: '/resume.pdf',
+        href: resume,
         style: 'rounded-br-md',
         download: true,
     }

@@ -1,1 +1,3 @@
-export const aboutMeParagraph = 'Motivated and skillful software developer seeking opportunities for developments and growth. Skilled in Frontend, Backend, Game, Virtual Reality and Mobile development. Worked in multiple teams providing valuable insights and problem solving ideas.'
+// export const aboutMeParagraph = 'Motivated and skillful software developer seeking opportunities for developments and growth. Skilled in Frontend, Backend, Game, Virtual Reality and Mobile development. Worked in multiple teams providing valuable insights and problem solving ideas.'
+
+export const aboutMeParagraph = 'I am currently in the process of updating this portfolio website, and it will be completed soon.';
